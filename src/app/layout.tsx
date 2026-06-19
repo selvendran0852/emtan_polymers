@@ -21,7 +21,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: 'EMTAN Polymers | Custom Polyurethane & Industrial Solutions Chennai',
   description:
-    'Chennai-based leading B2B manufacturer of custom cast polyurethane (PU) products, rollers, wheels, seals, pipeline pigs, and wear-resistant solutions.',
+    'India\'s leading manufacturer and only B2B supplier of custom cast polyurethane (PU) products, rollers, wheels, seals, pipeline pigs, and wear-resistant solutions.',
   keywords:
     'polyurethane, PU rollers, caster wheels, PU seals, pipeline pigs, industrial wear solutions, cast polyurethane Chennai, EMTAN polymers',
   authors: [{ name: 'EMTAN Polymers' }],
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/hero_polyurethane.png',
+        url: '/images/industrial_solutions.png',
         width: 1200,
         height: 630,
         alt: 'EMTAN Polymers - polyurethane Manufacturer Solutions',
@@ -79,7 +79,7 @@ export default function RootLayout({
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors duration-300">
+      <body className="min-h-full flex flex-col text-foreground transition-colors duration-300">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

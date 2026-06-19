@@ -37,34 +37,20 @@ const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 4,
-    title: 'Modern CNC Machining Center',
-    category: 'factory',
-    imageUrl: '/images/manufacturing_factory.png',
-    description: 'CNC lathe machining polyurethane cores to precise technical tolerances in our Chennai factory.'
-  },
-  {
-    id: 5,
     title: 'Pipeline Foam Pig Solutions',
     category: 'products',
     imageUrl: '/images/pipeline_pigs.png',
     description: 'Low and medium density polyurethane cleaning foam pigs for drying and scraping.'
   },
   {
-    id: 6,
+    id: 5,
     title: 'Track Pads and Shock Isolation Dampers',
     category: 'products',
     imageUrl: '/images/pu_track_pads.jpg',
     description: 'Custom cast engineering components designed to absorb heavy impacts.'
   },
   {
-    id: 7,
-    title: 'Assembly & Curing Oven Area',
-    category: 'factory',
-    imageUrl: '/images/hero_polyurethane.png',
-    description: 'Pre-heating steel cores and preparing chemical bonds in a clean manufacturing workshop.'
-  },
-  {
-    id: 8,
+    id: 6,
     title: 'Polyurethane Rollers Installation',
     category: 'installations',
     imageUrl: '/images/pu_roller.jpg',
@@ -117,7 +103,7 @@ export default function GalleryPage() {
   return (
     <div className="min-h-screen bg-background font-sans transition-colors duration-300">
       {/* Gallery Header */}
-      <section className="bg-slate-900 text-white py-16 border-b border-slate-800 relative overflow-hidden">
+      <section className="bg-slate-900/70 text-white py-16 border-b border-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-25" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4">
           <span className="text-xs font-bold uppercase tracking-wider text-accent-orange">

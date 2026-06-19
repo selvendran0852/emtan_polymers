@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-slate-950 text-slate-300 border-t border-slate-900 font-sans">
+    <footer className="w-full bg-slate-950/70 text-slate-300 border-t border-slate-900 font-sans">
       {/* Top Section */}
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -32,7 +32,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Chennai&apos;s leading manufacturer of high-performance custom-cast Polyurethane (PU) rollers, wheels, seals, pipeline pigs, and industrial wear solutions. Engineered for durability.
+              India&apos;s leading and only B2B supplier of high-performance custom-cast Polyurethane (PU) rollers, wheels, seals, pipeline pigs, and industrial wear solutions. Engineered for durability.
             </p>
             <div className="flex gap-4">
               <a
@@ -133,7 +133,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full bg-slate-980 border-t border-slate-900 text-xs text-slate-500">
+      <div className="w-full bg-slate-950/40 border-t border-slate-900 text-xs text-slate-500">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="space-y-1 text-center md:text-left">
             <p>© {currentYear} EMTAN Polymers. All Rights Reserved. Manufactured in Chennai, India.</p>

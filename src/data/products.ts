@@ -6,6 +6,7 @@ export const CATEGORIES = [
   { id: 'seals-components', name: 'Seals & Components', description: 'Precision custom-cast polyurethane seals, bushes, rods, sheets, and wear-resistant components.', imageUrl: '/images/pu_seal.jpg' },
   { id: 'pipeline-products', name: 'Pipeline Products', description: 'Pipeline cleaning pigs, sealing discs, and solid cast polyurethane products designed for the pipeline maintenance industry.', imageUrl: '/images/pipeline_pigs.png' },
   { id: 'industrial-solutions', name: 'Industrial Solutions', description: 'Heavy-duty polyurethane track pads, dampers, shock pads, and custom engineering wear solutions.', imageUrl: '/images/pu_track_pads.jpg' },
+  { id: 'liners', name: 'Liners', description: 'Premium Polyurethane (PU) liners for granite and stone processing machinery, engineered to deliver exceptional abrasion resistance, impact strength, and operational durability.', imageUrl: '/images/socomac_single_liners.png' },
 ] as const;
 
 export const PRODUCTS: Product[] = [
@@ -213,6 +214,159 @@ export const PRODUCTS: Product[] = [
     },
     industries: ['Paper & Pulp Industry', 'Engineering Industry'],
     imageUrl: '/images/pu_roller.jpg'
+  },
+
+  // 13. LINERS - SOCOMAC Single Groove Liner
+  {
+    slug: 'socomac-single-groove-liner',
+    name: 'SOCOMAC Single Groove Liner',
+    category: 'liners',
+    description: 'We manufacture premium Polyurethane (PU) Liners for granite and stone processing machinery, engineered to deliver exceptional abrasion resistance, impact strength, and operational durability. Our SOCOMAC single groove liners provide effective material guidance, wear protection, and operational stability in granite slab production and processing lines.',
+    applications: [
+      'SOCOMAC stone processing equipment',
+      'Material guidance and wear protection',
+      'Granite slab production and processing lines'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Available Sizes': '2.2 Mtrs to 2.9 Mtrs',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/socomac_single_liners.png'
+  },
+  // 14. LINERS - SOCOMAC Double Groove Liner
+  {
+    slug: 'socomac-double-groove-liner',
+    name: 'SOCOMAC Double Groove Liner',
+    category: 'liners',
+    description: 'Specially engineered double groove polyurethane liners for SOCOMAC stone processing equipment. These liners provide dual guidance pathways, outstanding wear protection, and exceptional longevity under demanding production workloads.',
+    applications: [
+      'SOCOMAC stone processing equipment',
+      'Double-groove material guidance systems',
+      'Granite slab production and processing lines'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Available Sizes': '2.2 Mtrs to 2.9 Mtrs',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/socomac_double_liner.jpg'
+  },
+  // 15. LINERS - SOCOMAC Double Groove Liner with Safety
+  {
+    slug: 'socomac-double-groove-liner-with-safety',
+    name: 'SOCOMAC Double Groove Liner with Safety',
+    category: 'liners',
+    description: 'Double groove polyurethane liners with integrated safety features designed for SOCOMAC machinery. These components provide an extra safety margin to prevent damage to machine pulleys and components under peak loads and severe operating environments.',
+    applications: [
+      'SOCOMAC stone processing equipment',
+      'Double-groove material guidance systems with extra safety margin',
+      'Granite slab production and processing lines'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Available Sizes': '2.2 Mtrs to 2.9 Mtrs',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/socomac_double_with_safety_liner.jpg'
+  },
+  // 16. LINERS - GASPARI Machine Liners
+  {
+    slug: 'gaspari-machine-liners',
+    name: 'GASPARI Machine Liners',
+    category: 'liners',
+    description: 'Polyurethane liners manufactured for GASPARI machinery. These liners are engineered for pulley and wheel assemblies operating under high-load conditions where dimensional accuracy, wear resistance, and long service life are critical.',
+    applications: [
+      'GASPARI stone processing machinery',
+      'Pulley and wheel assemblies',
+      'High-load operating environments',
+      'Tension wheel and guide systems'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Available Products': '1G Ideal Pulley Liner (3.9 Mtrs), 3G Guide Pulley Liner (2.2 Mtrs), Tension Wheel Liner (3.3 Mtrs)',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/gaspari_machine_liner.png'
+  },
+  // 17. LINERS - BRETON Machine Liners
+  {
+    slug: 'breton-machine-liners',
+    name: 'BRETON Machine Liners',
+    category: 'liners',
+    description: 'Polyurethane liners suitable for BRETON stone processing systems. These liners enhance component protection, improve material handling performance, and contribute to reduced operational downtime.',
+    applications: [
+      'BRETON stone processing systems',
+      'Component protection and wear reduction',
+      'Free wheel, drum/guide wheel, and tension wheel assemblies',
+      'Material handling performance improvement'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Available Products': 'Free Wheel Liner (3.3 Mtrs), Drum / Guide Wheel Liner (3.3 Mtrs), Tension Wheel Liner (3.3 Mtrs)',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/breton_machine_liner.png'
   },
 
   // --- OTHER PRODUCTS ---

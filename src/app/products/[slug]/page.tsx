@@ -57,7 +57,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-background font-sans transition-colors duration-300">
       {/* Breadcrumbs & Navigation */}
-      <div className="bg-slate-50 dark:bg-slate-900/40 border-b border-card-border py-4 transition-colors">
+      <div className="bg-slate-50/50 dark:bg-slate-900/20 border-b border-card-border py-4 transition-colors">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4 text-xs font-semibold text-muted-text">
           <div className="flex items-center gap-2">
             <Link href="/" className="hover:text-accent-orange transition-colors">
@@ -212,7 +212,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
           {/* Right: Quote / RFQ form sticky sidebar */}
           <div className="lg:col-span-5">
             <div className="sticky top-28 space-y-6">
-              <div className="p-6 bg-slate-900 text-white rounded-2xl border border-slate-800 space-y-3 relative overflow-hidden">
+              <div className="p-6 bg-slate-900/70 text-white rounded-2xl border border-slate-800 space-y-3 relative overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,#f97316,#000_70%)] opacity-25" />
                 <span className="relative z-10 text-xs font-bold uppercase tracking-widest text-accent-orange">
                   B2B Sourcing

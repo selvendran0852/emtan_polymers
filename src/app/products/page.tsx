@@ -82,7 +82,7 @@ function ProductsCatalogContent() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-10">
       {/* Search and Filters Header */}
-      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 bg-slate-50 dark:bg-slate-900/40 p-6 rounded-2xl border border-card-border">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 bg-slate-50/50 dark:bg-slate-900/20 p-6 rounded-2xl border border-card-border">
         {/* Search */}
         <div className="relative flex-grow max-w-xl">
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-text" />
@@ -369,7 +369,7 @@ export default function ProductsCatalogPage() {
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
       {/* Catalog Hero */}
-      <section className="bg-slate-900 text-white py-16 border-b border-slate-800 relative overflow-hidden">
+      <section className="bg-slate-900/70 text-white py-16 border-b border-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-25" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">

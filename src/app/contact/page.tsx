@@ -132,7 +132,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
       {/* Contact Banner */}
-      <section className="bg-slate-900 text-white py-16 border-b border-slate-800 relative overflow-hidden">
+      <section className="bg-slate-900/70 text-white py-16 border-b border-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-25" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4">
           <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">

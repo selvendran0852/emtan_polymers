@@ -1,7 +1,7 @@
 export interface Product {
   slug: string;
   name: string;
-  category: 'rollers' | 'wheels' | 'seals-components' | 'pipeline-products' | 'industrial-solutions';
+  category: 'rollers' | 'wheels' | 'seals-components' | 'pipeline-products' | 'industrial-solutions' | 'liners';
   description: string;
   applications: string[];
   features: string[];

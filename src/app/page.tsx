@@ -12,15 +12,15 @@ import {
   Users,
   BadgeDollarSign,
   ChevronRight,
-  TrendingUp,
-  Cpu,
   Workflow,
   Factory,
   CheckCircle,
   HelpCircle,
   FileCheck,
   Phone,
-  Mail
+  Mail,
+  Layers,
+  Droplet
 } from 'lucide-react';
 import { CATEGORIES, PRODUCTS } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
@@ -32,7 +32,6 @@ interface CustomerLogo {
 }
 
 const CUSTOMER_LOGOS: CustomerLogo[] = [
-  { src: 'logo.9b4a5a8a.svg', name: 'ANAGHA STONES LUP', bg: 'bg-black' },
   { src: 'photo_1_2026-06-11_22-20-34.jpg', name: 'LAVINA STONES', bg: 'bg-black' },
   { src: 'photo_2_2026-06-11_22-20-34.jpg', name: 'DACSS UGRAMITES PVT LTD', bg: 'bg-black' },
   { src: 'photo_3_2026-06-11_22-20-34.jpg', name: 'R.S ENGINEERING WORS', bg: 'bg-black' },
@@ -50,28 +49,25 @@ const CUSTOMER_LOGOS: CustomerLogo[] = [
 ];
 
 const ALL_CUSTOMER_NAMES = [
-  'ANAGHA STONES LUP',
+  'ANAGHA STONES LLP',
   'LAVINA STONES',
-  'DACSS UGRAMITES PVT LTD',
-  'R.S ENGINEERING WORS',
+  'DACSS GRANITE PVT LTD',
   'PSI STONES PVT LTD',
-  'PSG STONES LUP',
-  'MARUDHAR STONES.',
-  'PACIFIL GRANITES (INDIA) PVT LTD',
-  'MIS PANINI GRANITES PVT LTD',
-  'OMEAGA GRANITES PVT LTD MANI',
-  'MEGA STRUCTURE SHREE PAM',
-  'JYOTI ROCKS & EXPORTS PVT LTD',
-  'RECEIVED ENTER PART',
+  'PSG STONES LLP',
+  'MARUDHAR STONES',
+  'PACIFIC GRANITES (INDIA) PVT LTD',
+  'M/S PANINI GRANITES PVT LTD',
+  'MANI OMEGA GRANITES PVT LTD',
+  'SREE RAM MEGA STRUCTURE',
+  'JYOTHI ROCKS& EXPORTS PVT LTD',
   'ARYAN GRANITES AND MONUMENTS (P) LTD',
-  'BASANT NATURAL STONES PVT LTD',
   'MIRACLE GRANITO PVT LTD',
-  'A RSG STONES',
-  'ARI HANT TILES and MARBLES (P) Ltd.',
-  'RAVI LEELA GRANITES LTD',
+  'RSG STONES',
+  'ARIHANT TILES AND MARBLES (P) LTD',
+  'RAVILEELA GRANITES LTD',
   'HILLTOP STONES PVT LTD',
   'VENKATA SRI BALAJI EXPORTS',
-  'MIS EQUITY EXPORTS PVT LTD',
+  'M/S AEQUITAS EXPORTS PVT LTD',
   'HELINOVA INDUSTRIES'
 ];
 
@@ -136,13 +132,9 @@ export default function HomePage() {
 
   const industries = [
     { name: 'Cement Industry', icon: <Workflow className="w-6 h-6" /> },
-    { name: 'Printing Industry', icon: <Cpu className="w-6 h-6" /> },
-    { name: 'Textile Industry', icon: <TrendingUp className="w-6 h-6" /> },
-    { name: 'Engineering Industry', icon: <Factory className="w-6 h-6" /> },
-    { name: 'Mining Industry', icon: <ShieldAlert className="w-6 h-6" /> },
-    { name: 'Material Handling', icon: <Truck className="w-6 h-6" /> },
-    { name: 'Pipeline Industry', icon: <Settings className="w-6 h-6" /> },
-    { name: 'Steel Industry', icon: <Award className="w-6 h-6" /> }
+    { name: 'Granite and Marbles', icon: <Layers className="w-6 h-6" /> },
+    { name: 'Oil and Gas', icon: <Droplet className="w-6 h-6" /> },
+    { name: 'Mining Industry', icon: <ShieldAlert className="w-6 h-6" /> }
   ];
 
   const processTimeline = [
@@ -183,193 +175,158 @@ export default function HomePage() {
   return (
     <div className="relative overflow-hidden font-sans">
       {/* 1. HERO SECTION */}
-      <section className="relative bg-slate-900 text-white py-24 md:py-32 overflow-hidden">
+      <section className="relative bg-slate-900/70 text-white py-24 md:py-32 overflow-hidden">
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-35" />
         
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7 space-y-6">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-xs font-semibold tracking-wider text-accent-orange uppercase"
-            >
-              <span className="w-2 h-2 rounded-full bg-accent-orange animate-ping" />
-              ISO 9001:2015 Quality Standards
-            </motion.div>
-            
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight"
-            >
-              High Performance <span className="text-accent-orange">Polyurethane Solutions</span> Built For Industry
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-slate-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-2xl"
-            >
-              Custom Polyurethane Components, Rollers, Wheels, Seals, Pipeline Pigs and Industrial Wear Parts Manufactured For Maximum Durability And Performance.
-            </motion.p>
-            
-            {/* Quick Contact Bar */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
-              className="flex flex-col sm:flex-row sm:items-center gap-6 py-2 text-sm text-slate-300"
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-lg bg-accent-orange/15 text-accent-orange flex items-center justify-center shrink-0">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] uppercase font-bold tracking-widest text-accent-orange">Direct Phone</span>
-                  <div className="flex items-center gap-2 text-white font-semibold">
-                    <a href="tel:+919176239027" className="hover:text-accent-orange transition-colors">
-                      +91 91762 39027
-                    </a>
-                    <span className="text-slate-700">|</span>
-                    <a href="tel:+918925609027" className="hover:text-accent-orange transition-colors">
-                      89256 09027
-                    </a>
-                  </div>
-                </div>
+        <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center space-y-8">
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-xs font-semibold tracking-wider text-accent-orange uppercase"
+          >
+            <span className="w-2 h-2 rounded-full bg-accent-orange animate-ping" />
+            ISO 9001:2015 Quality Standards
+          </motion.div>
+          
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto"
+          >
+            Custom <span className="text-accent-orange">Polyurethane Components</span> Engineered for Industrial Performance
+          </motion.h1>
+          
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-slate-300 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-3xl mx-auto"
+          >
+            Custom Polyurethane Components, Rollers, Wheels, Seals, Pipeline Pigs and Industrial Wear Parts Manufactured For Maximum Durability And Performance.
+          </motion.p>
+          
+          {/* Quick Contact Bar */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.25 }}
+            className="flex flex-col sm:flex-row sm:items-center justify-center gap-6 py-2 text-sm text-slate-300"
+          >
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-accent-orange/15 text-accent-orange flex items-center justify-center shrink-0">
+                <Phone className="w-4 h-4" />
               </div>
-
-              <div className="hidden sm:block w-px h-8 bg-slate-800 self-stretch" />
-
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-lg bg-accent-orange/15 text-accent-orange flex items-center justify-center shrink-0">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] uppercase font-bold tracking-widest text-accent-orange">Engineering Email</span>
-                  <a href="mailto:emtanpolymers@gmail.com" className="text-white font-semibold hover:text-accent-orange transition-colors">
-                    emtanpolymers@gmail.com
+              <div className="flex flex-col text-left">
+                <span className="text-[10px] uppercase font-bold tracking-widest text-accent-orange">contact number</span>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  <a href="tel:+919176239027" className="hover:text-accent-orange transition-colors">
+                    +91 91762 39027
+                  </a>
+                  <span className="text-slate-700">|</span>
+                  <a href="tel:+918925609027" className="hover:text-accent-orange transition-colors">
+                    89256 09027
                   </a>
                 </div>
               </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
-            >
-              <Link
-                href="/contact?rfq=true"
-                className="inline-flex items-center justify-center rounded-lg bg-accent-orange hover:bg-accent-hover text-white font-bold px-8 py-4 text-base shadow-lg shadow-accent-orange/20 transition-all duration-300 hover:-translate-y-0.5"
-              >
-                Request a Quote
-                <ChevronRight className="w-5 h-5 ml-1" />
-              </Link>
-              <Link
-                href="/products"
-                className="inline-flex items-center justify-center rounded-lg bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-8 py-4 text-base transition-all duration-300 hover:-translate-y-0.5"
-              >
-                View Products
-              </Link>
-            </motion.div>
-          </div>
+            </div>
+
+            <div className="hidden sm:block w-px h-8 bg-slate-800 self-stretch" />
+
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-lg bg-accent-orange/15 text-accent-orange flex items-center justify-center shrink-0">
+                <Mail className="w-4 h-4" />
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="text-[10px] uppercase font-bold tracking-widest text-accent-orange">mail</span>
+                <a href="mailto:emtanpolymers@gmail.com" className="text-white font-semibold hover:text-accent-orange transition-colors">
+                  emtanpolymers@gmail.com
+                </a>
+              </div>
+            </div>
+          </motion.div>
           
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="lg:col-span-5 relative w-full aspect-square max-w-[450px] lg:max-w-none mx-auto"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col sm:flex-row justify-center gap-4 pt-4"
           >
-            <div className="absolute inset-0 bg-gradient-to-tr from-accent-orange/20 to-transparent rounded-2xl blur-2xl" />
-            <div className="relative w-full h-full rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
-              <Image
-                src="/images/hero_polyurethane.png"
-                alt="EMTAN Polymers Polyurethane Manufacturing Products"
-                fill
-                sizes="(max-width: 768px) 100vw, 40vw"
-                className="object-cover"
-                priority
-              />
-            </div>
+            <Link
+              href="/contact?rfq=true"
+              className="inline-flex items-center justify-center rounded-lg bg-accent-orange hover:bg-accent-hover text-white font-bold px-8 py-4 text-base shadow-lg shadow-accent-orange/20 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              Request a Quote
+              <ChevronRight className="w-5 h-5 ml-1" />
+            </Link>
+            <Link
+              href="/products"
+              className="inline-flex items-center justify-center rounded-lg bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold px-8 py-4 text-base transition-all duration-300 hover:-translate-y-0.5"
+            >
+              View Products
+            </Link>
           </motion.div>
         </div>
       </section>
 
       {/* 2. ABOUT SECTION */}
       <section id="about" className="py-20 bg-background transition-colors duration-300">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div className="lg:col-span-5 relative aspect-square rounded-2xl overflow-hidden border border-card-border shadow-lg">
-              <Image
-                src="/images/manufacturing_factory.png"
-                alt="EMTAN Polymers Chennai Factory"
-                fill
-                sizes="(max-width: 768px) 100vw, 40vw"
-                className="object-cover"
-              />
-            </div>
-            
-            <div className="lg:col-span-7 space-y-6">
-              <span className="block text-xs font-bold uppercase tracking-wider text-accent-orange">
-                About The Company
-              </span>
-              <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-                Chennai-Based Manufacturer & Polyurethane Experts
-              </h2>
-              <p className="text-muted-text text-sm sm:text-base leading-relaxed">
-                EMTAN Polymers is a state-of-the-art polyurethane custom casting facility based in Chennai. We design, formulate, and manufacture custom-cast polyurethane solutions that outperform rubber, plastics, and metals under demanding operational conditions.
-              </p>
-              <p className="text-muted-text text-sm sm:text-base leading-relaxed">
-                Whether you need precision-ground print rollers, wear-resistant sheets for heavy mining chutes, load wheels for automated warehouse machinery, or specialized pipeline cleaning pigs, our engineering experts create components designed for maximum performance, minimum friction, and superior durability.
-              </p>
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center space-y-6">
+          <span className="block text-xs font-bold uppercase tracking-wider text-accent-orange">
+            About The Company
+          </span>
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
+            India&apos;s Leading Manufacturer &amp; Only B2B Supplier
+          </h2>
+          <p className="text-muted-text text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+            EMTAN Polymers is a state-of-the-art polyurethane custom casting facility based in Chennai. We design, formulate, and manufacture custom-cast polyurethane solutions that outperform rubber, plastics, and metals under demanding operational conditions.
+          </p>
+          <p className="text-muted-text text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+            Whether you need precision-ground print rollers, wear-resistant sheets for heavy mining chutes, load wheels for automated warehouse machinery, or specialized pipeline cleaning pigs, our engineering experts create components designed for maximum performance, minimum friction, and superior durability.
+          </p>
 
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-6 pt-6 border-t border-card-border">
-                <div>
-                  <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
-                    15+
-                  </span>
-                  <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
-                    Years of Experience
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
-                    99.8%
-                  </span>
-                  <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
-                    Product Quality Rating
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
-                    100%
-                  </span>
-                  <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
-                    Custom Manufacturing
-                  </span>
-                </div>
-                <div>
-                  <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
-                    24/7
-                  </span>
-                  <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
-                    Technical Support
-                  </span>
-                </div>
-              </div>
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8 border-t border-card-border">
+            <div>
+              <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
+                15+
+              </span>
+              <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
+                Years of Experience
+              </span>
+            </div>
+            <div>
+              <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
+                95.6%
+              </span>
+              <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
+                Product Quality Rating
+              </span>
+            </div>
+            <div>
+              <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
+                100%
+              </span>
+              <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
+                Custom Manufacturing
+              </span>
+            </div>
+            <div>
+              <span className="block text-3xl sm:text-4xl font-extrabold text-foreground font-display">
+                24/7
+              </span>
+              <span className="block text-xs font-bold uppercase tracking-wider text-muted-text mt-1">
+                Technical Support
+              </span>
             </div>
           </div>
         </div>
       </section>
 
       {/* 3. WHY CHOOSE US */}
-      <section className="py-20 bg-slate-50 dark:bg-slate-900/40 border-y border-card-border transition-colors duration-300">
+      <section className="py-20 bg-slate-50/50 dark:bg-slate-900/20 border-y border-card-border transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="block text-xs font-bold uppercase tracking-wider text-accent-orange">
@@ -452,7 +409,7 @@ export default function HomePage() {
           </div>
 
           {/* Active Category Description */}
-          <div className="bg-slate-50 dark:bg-slate-900/20 rounded-xl p-4 sm:p-6 border border-card-border flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="bg-slate-50/50 dark:bg-slate-900/10 rounded-xl p-4 sm:p-6 border border-card-border flex flex-col md:flex-row md:items-center justify-between gap-6">
             <p className="text-muted-text text-sm leading-relaxed max-w-3xl">
               {CATEGORIES.find(c => c.id === activeCategory)?.description}
             </p>
@@ -474,7 +431,7 @@ export default function HomePage() {
       </section>
 
       {/* 5. INDUSTRIES WE SERVE */}
-      <section className="py-20 bg-slate-950 text-white overflow-hidden">
+      <section className="py-20 bg-slate-950/70 text-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-12">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="block text-xs font-bold uppercase tracking-wider text-accent-orange">
@@ -492,7 +449,7 @@ export default function HomePage() {
             {industries.map((ind, index) => (
               <div
                 key={index}
-                className="group relative flex flex-col justify-between p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/5"
+                className="group relative flex flex-col justify-between p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-all duration-300 hover:shadow-xl hover:shadow-accent-orange/5"
               >
                 <div className="w-12 h-12 rounded-lg bg-slate-800 text-accent-orange flex items-center justify-center mb-6 group-hover:bg-accent-orange group-hover:text-white transition-colors duration-300">
                   {ind.icon}
@@ -506,43 +463,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. CUSTOM MANUFACTURING SECTION */}
       <section className="py-20 bg-background transition-colors duration-300">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <span className="block text-xs font-bold uppercase tracking-wider text-accent-orange">
-                Manufacturing Capability
-              </span>
-              <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
-                Custom Polyurethane Solutions
-              </h2>
-              <p className="text-muted-text text-sm sm:text-base leading-relaxed">
-                We manufacture polyurethane products according to customer drawings, physical samples, detailed technical specifications, hardness requirements, and industrial applications. Our in-house chemical blending, mold preparation, and secondary tooling ensure precise consistency.
-              </p>
-              <div className="flex flex-wrap gap-3 pt-2">
-                {['Metal Degreasing', 'Chemical Bonding Agent Prep', 'Oven Curing Cycle Control', 'CNC Turning & Milling', 'Hardness Mapping'].map((cap, i) => (
-                  <span
-                    key={i}
-                    className="inline-flex items-center rounded-lg bg-slate-50 dark:bg-slate-900 border border-card-border px-3.5 py-1.5 text-xs font-semibold text-foreground"
-                  >
-                    <CheckCircle className="w-4 h-4 text-accent-orange mr-1.5 shrink-0" />
-                    {cap}
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center space-y-16">
+          <div className="space-y-6">
+            <span className="block text-xs font-bold uppercase tracking-wider text-accent-orange">
+              Manufacturing Capability
+            </span>
+            <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">
+              Custom Polyurethane Solutions
+            </h2>
+            <p className="text-muted-text text-sm sm:text-base leading-relaxed max-w-3xl mx-auto">
+              We manufacture polyurethane products according to customer drawings, physical samples, detailed technical specifications, hardness requirements, and industrial applications. Our in-house chemical blending, mold preparation, and secondary tooling ensure precise consistency.
+            </p>
+            <div className="flex flex-wrap justify-center gap-3 pt-2">
+              {['Oven Curing Cycle Control', 'Hardness Mapping', 'Kg Rate for Bulk Order'].map((cap, i) => (
+                <span
+                  key={i}
+                  className="inline-flex items-center rounded-lg bg-slate-50 dark:bg-slate-900 border border-card-border px-3.5 py-1.5 text-xs font-semibold text-foreground"
+                >
+                  <CheckCircle className="w-4 h-4 text-accent-orange mr-1.5 shrink-0" />
+                  {cap}
                   </span>
                 ))}
               </div>
             </div>
-            
-            <div className="relative aspect-video w-full rounded-2xl overflow-hidden border border-card-border shadow-lg">
-              <Image
-                src="/images/pu_seal.jpg"
-                alt="Custom molded polyurethane products"
-                fill
-                sizes="(max-width: 768px) 100vw, 45vw"
-                className="object-cover"
-              />
-            </div>
-          </div>
 
           {/* Process Timeline */}
           <div className="space-y-10">
@@ -582,7 +526,7 @@ export default function HomePage() {
       </section>
 
       {/* CUSTOMER LOGOS SECTION */}
-      <section className="py-12 bg-slate-50 dark:bg-slate-900/10 border-b border-card-border transition-colors duration-300">
+      <section className="py-12 bg-slate-50/50 dark:bg-slate-900/5 border-b border-card-border transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <span className="block text-[10px] font-bold uppercase tracking-widest text-accent-orange mb-1">
@@ -634,7 +578,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-slate-950 py-16 text-center text-white border-t border-slate-900">
+      <section className="bg-slate-950/70 py-16 text-center text-white border-t border-slate-900">
         <div className="mx-auto max-w-4xl px-4 space-y-6">
           <h2 className="font-display text-3xl sm:text-4xl font-extrabold tracking-tight">
             Ready to Optimize Your Industrial Components?
