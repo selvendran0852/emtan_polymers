@@ -36,15 +36,15 @@ const CUSTOMER_LOGOS: CustomerLogo[] = [
   { src: 'photo_2_2026-06-11_22-20-34.jpg', name: 'DACSS UGRAMITES PVT LTD', bg: 'bg-black' },
   { src: 'photo_3_2026-06-11_22-20-34.jpg', name: 'R.S ENGINEERING WORS', bg: 'bg-black' },
   { src: 'photo_4_2026-06-11_22-20-34.jpg', name: 'PSI STONES PVT LTD', bg: 'bg-black' },
-  { src: 'photo_5_2026-06-11_22-20-34.jpg', name: 'PSG STONES LUP', bg: 'bg-white' },
-  { src: 'photo_6_2026-06-11_22-20-34.jpg', name: 'MARUDHAR STONES.', bg: 'bg-white' },
-  { src: 'photo_7_2026-06-11_22-20-34.jpg', name: 'PACIFIL GRANITES (INDIA) PVT LTD', bg: 'bg-white' },
+  { src: 'photo_5_2026-06-11_22-20-34.jpg', name: 'PSG STONES LUP', bg: 'bg-black' },
+  { src: 'photo_6_2026-06-11_22-20-34.jpg', name: 'MARUDHAR STONES.', bg: 'bg-black' },
+  { src: 'photo_7_2026-06-11_22-20-34.jpg', name: 'PACIFIL GRANITES (INDIA) PVT LTD', bg: 'bg-black' },
   { src: 'photo_8_2026-06-11_22-20-34.jpg', name: 'MIS PANINI GRANITES PVT LTD', bg: 'bg-black' },
-  { src: 'photo_9_2026-06-11_22-20-34.jpg', name: 'OMEAGA GRANITES PVT LTD MANI', bg: 'bg-white' },
+  { src: 'photo_9_2026-06-11_22-20-34.jpg', name: 'OMEAGA GRANITES PVT LTD MANI', bg: 'bg-black' },
   { src: 'photo_10_2026-06-11_22-20-34.jpg', name: 'MEGA STRUCTURE SHREE PAM', bg: 'bg-black' },
   { src: 'photo_11_2026-06-11_22-20-34.jpg', name: 'JYOTI ROCKS & EXPORTS PVT LTD', bg: 'bg-black' },
   { src: 'photo_12_2026-06-11_22-20-34.jpg', name: 'RECEIVED ENTER PART', bg: 'bg-black' },
-  { src: 'photo_13_2026-06-11_22-20-34.jpg', name: 'ARYAN GRANITES AND MONUMENTS (P) LTD', bg: 'bg-white' },
+  { src: 'photo_13_2026-06-11_22-20-34.jpg', name: 'ARYAN GRANITES AND MONUMENTS (P) LTD', bg: 'bg-black' },
   { src: 'photo_14_2026-06-11_22-20-34.jpg', name: 'BASANT NATURAL STONES PVT LTD', bg: 'bg-black' }
 ];
 

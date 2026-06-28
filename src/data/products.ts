@@ -306,17 +306,17 @@ export const PRODUCTS: Product[] = [
     industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
     imageUrl: '/images/socomac_double_with_safety_liner.jpg'
   },
-  // 16. LINERS - GASPARI Machine Liners
+  // 16. LINERS - GASPARI 1G Ideal Pulley Liner (3.9 Mtrs)
   {
-    slug: 'gaspari-machine-liners',
-    name: 'GASPARI Machine Liners',
+    slug: 'gaspari-1g-ideal-pulley-liner-3-9-mtrs',
+    name: 'GASPARI 1G Ideal Pulley Liner (3.9 Mtrs)',
     category: 'liners',
-    description: 'Polyurethane liners manufactured for GASPARI machinery. These liners are engineered for pulley and wheel assemblies operating under high-load conditions where dimensional accuracy, wear resistance, and long service life are critical.',
+    description: 'Premium Polyurethane (PU) 1G Ideal Pulley Liner engineered for GASPARI stone processing machinery. Designed to operate under high-load conditions, providing outstanding dimensional accuracy, wear resistance, and long service life in granite slab production lines.',
     applications: [
       'GASPARI stone processing machinery',
-      'Pulley and wheel assemblies',
-      'High-load operating environments',
-      'Tension wheel and guide systems'
+      '1G Ideal Pulley assemblies',
+      'High-load stone cutting operations',
+      'Material guidance and wear protection'
     ],
     features: [
       'High Abrasion Resistance',
@@ -328,25 +328,90 @@ export const PRODUCTS: Product[] = [
       'Premium Grade Polyurethane Formulation'
     ],
     specifications: {
-      'Available Products': '1G Ideal Pulley Liner (3.9 Mtrs), 3G Guide Pulley Liner (2.2 Mtrs), Tension Wheel Liner (3.3 Mtrs)',
+      'Size': '3.9 Mtrs',
+      'Machine Compatibility': 'GASPARI Machinery',
       'Material': 'Premium Grade Polyurethane Formulation',
       'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
       'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
       'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
     },
     industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
-    imageUrl: '/images/gaspari_machine_liner.png'
+    imageUrl: '/images/gaspari_1g_ideal_pulley_3_9_mtrs.jpg'
   },
-  // 17. LINERS - BRETON Machine Liners
+  // 17. LINERS - GASPARI 3G Guide Pulley Liner (2.2 Mtrs)
   {
-    slug: 'breton-machine-liners',
-    name: 'BRETON Machine Liners',
+    slug: 'gaspari-3g-guide-pulley-liner-2-2-mtrs',
+    name: 'GASPARI 3G Guide Pulley Liner (2.2 Mtrs)',
     category: 'liners',
-    description: 'Polyurethane liners suitable for BRETON stone processing systems. These liners enhance component protection, improve material handling performance, and contribute to reduced operational downtime.',
+    description: 'Premium Polyurethane (PU) 3G Guide Pulley Liner engineered for GASPARI stone processing machinery. These liners provide precise guidance, component protection, and exceptional longevity under demanding production workloads.',
+    applications: [
+      'GASPARI stone processing machinery',
+      '3G Guide Pulley assemblies',
+      'Granite slab production and processing lines',
+      'Material guidance and wear protection'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Size': '2.2 Mtrs',
+      'Machine Compatibility': 'GASPARI Machinery',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/gaspari_3g_guide_pulley_2_2_mtrs.jpg'
+  },
+  // 18. LINERS - GASPARI Tension Wheel Liner (3.3 Mtrs)
+  {
+    slug: 'gaspari-tension-wheel-liner-3-3-mtrs',
+    name: 'GASPARI Tension Wheel Liner (3.3 Mtrs)',
+    category: 'liners',
+    description: 'Premium Polyurethane (PU) Tension Wheel Liner engineered for GASPARI stone processing machinery. Designed to withstand continuous tension and high-load mechanical stress, ensuring optimal pulley alignment and reducing maintenance downtime.',
+    applications: [
+      'GASPARI stone processing machinery',
+      'Tension wheel assemblies',
+      'High-load operating environments',
+      'Material guidance and wear protection'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Size': '3.3 Mtrs',
+      'Machine Compatibility': 'GASPARI Machinery',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/gaspari_tension_wheel_liners_3_3_mtrs.jpg'
+  },
+  // 19. LINERS - BRETON Free Wheel Liner (3.3 Mtrs)
+  {
+    slug: 'breton-free-wheel-liner-3-3-mtrs',
+    name: 'BRETON Free Wheel Liner (3.3 Mtrs)',
+    category: 'liners',
+    description: 'Premium Polyurethane (PU) Free Wheel Liner suitable for BRETON stone processing systems. Engineered to enhance component protection, reduce friction and wear, and contribute to lower operational downtime.',
     applications: [
       'BRETON stone processing systems',
+      'Free wheel assemblies',
       'Component protection and wear reduction',
-      'Free wheel, drum/guide wheel, and tension wheel assemblies',
       'Material handling performance improvement'
     ],
     features: [
@@ -359,14 +424,79 @@ export const PRODUCTS: Product[] = [
       'Premium Grade Polyurethane Formulation'
     ],
     specifications: {
-      'Available Products': 'Free Wheel Liner (3.3 Mtrs), Drum / Guide Wheel Liner (3.3 Mtrs), Tension Wheel Liner (3.3 Mtrs)',
+      'Size': '3.3 Mtrs',
+      'Machine Compatibility': 'BRETON Machinery',
       'Material': 'Premium Grade Polyurethane Formulation',
       'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
       'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
       'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
     },
     industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
-    imageUrl: '/images/breton_machine_liner.png'
+    imageUrl: '/images/breton_free_wheel_liners_3_3_mtrs.jpg'
+  },
+  // 20. LINERS - BRETON Guide Wheel Liner (3.3 Mtrs)
+  {
+    slug: 'breton-guide-wheel-liner-3-3-mtrs',
+    name: 'BRETON Guide Wheel Liner (3.3 Mtrs)',
+    category: 'liners',
+    description: 'Premium Polyurethane (PU) Guide Wheel Liner designed for BRETON stone processing systems. Delivers exceptional abrasion resistance and structural integrity under dynamic loads for precise slab processing guidance.',
+    applications: [
+      'BRETON stone processing systems',
+      'Drum and guide wheel assemblies',
+      'Component protection and wear reduction',
+      'Material handling performance improvement'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Size': '3.3 Mtrs',
+      'Machine Compatibility': 'BRETON Machinery',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/breton_guide_wheel_liners_3_3_mtrs.jpg'
+  },
+  // 21. LINERS - BRETON Tension Wheel Liner (3.3 Mtrs)
+  {
+    slug: 'breton-tension-wheel-liner-3-3-mtrs',
+    name: 'BRETON Tension Wheel Liner (3.3 Mtrs)',
+    category: 'liners',
+    description: 'Premium Polyurethane (PU) Tension Wheel Liner suitable for BRETON stone processing systems. Engineered to absorb dynamic mechanical stress, prevent slip, and protect tension assemblies in continuous production cycles.',
+    applications: [
+      'BRETON stone processing systems',
+      'Tension wheel assemblies',
+      'Component protection and wear reduction',
+      'Material handling performance improvement'
+    ],
+    features: [
+      'High Abrasion Resistance',
+      'Excellent Impact Strength',
+      'Superior Wear Protection',
+      'Precision Fitment',
+      'Long Service Life',
+      'Reduced Maintenance Costs',
+      'Premium Grade Polyurethane Formulation'
+    ],
+    specifications: {
+      'Size': '3.3 Mtrs',
+      'Machine Compatibility': 'BRETON Machinery',
+      'Material': 'Premium Grade Polyurethane Formulation',
+      'Customization': 'Manufactured according to customer drawings, physical samples, and machine specifications',
+      'Hardness & Profiles': 'Custom profiles, lengths, colours, and hardness grades can be produced',
+      'Resistance Properties': 'Highly resistant to water, slurry, abrasive mineral particles, and dynamic mechanical stress'
+    },
+    industries: ['Granite Processing Industry', 'Stone Processing Industry', 'Engineering Industry'],
+    imageUrl: '/images/breton_tension_wheel_liners_3_3_mtrs.jpg'
   },
 
   // --- OTHER PRODUCTS ---
