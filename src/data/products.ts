@@ -43,7 +43,7 @@ export const PRODUCTS: Product[] = [
       'Core Material': 'Steel, Stainless Steel, or Aluminum with high-strength bonding'
     },
     industries: ['Steel Industry', 'Oil & Gas', 'Material Handling', 'Engineering Industry'],
-    imageUrl: '/images/pu_rollers.png'
+    imageUrl: '/images/v_rollers.jpg'
   },
   // 3. WHEELS - Caster Wheels
   {
@@ -107,7 +107,8 @@ export const PRODUCTS: Product[] = [
     specifications: {
       'Hardness Range': '60 Shore A to 75 Shore D',
       'Standard Lengths': '300mm, 500mm, 1000mm',
-      'Diameter Range': '10mm to 300mm',
+      'Diameter Range': '20mm to 200mm',
+      'Available Colours': 'Red, Orange, Yellow, Transparent',
       'Tolerance': '+0.5mm / -0.0mm'
     },
     industries: ['Engineering Industry', 'Manufacturing', 'Tooling'],
@@ -124,7 +125,8 @@ export const PRODUCTS: Product[] = [
     specifications: {
       'Hardness Range': '65 Shore A to 95 Shore A',
       'Standard Dimensions': '1000x2000mm, 1200x2400mm',
-      'Thickness Range': '2mm to 50mm',
+      'Thickness Range': 'Starts from 10mm',
+      'Available Colours': 'Red, Orange, Yellow, Transparent',
       'Abrasion Resistance': '4x better than steel'
     },
     industries: ['Cement Industry', 'Mining Industry', 'Material Handling', 'Steel Industry'],
@@ -147,23 +149,7 @@ export const PRODUCTS: Product[] = [
     industries: ['Engineering Industry', 'Construction', 'Material Handling'],
     imageUrl: '/images/pu_track_pads.jpg'
   },
-  // 9. WHEELS - Polyurethane Wheels
-  {
-    slug: 'polyurethane-wheels',
-    name: 'Polyurethane Wheels',
-    category: 'wheels',
-    description: 'Standard and heavy-duty polyurethane wheels offering low rolling resistance, floor protection, high load capacity, and quiet operation in general material handling.',
-    applications: ['Industrial trolleys', 'Gantry crane wheels', 'Material handling carts', 'Assembly line fixtures'],
-    features: ['Protects factory floors from marking and damage', 'Low starting resistance reduces manual effort', 'Resistant to oils, greases, and industrial chemicals', 'High load-bearing capacity compared to rubber'],
-    specifications: {
-      'Hardness Range': '85 Shore A to 95 Shore A',
-      'Load Capacity': '100 kg to 5,000 kg',
-      'Rolling Resistance': 'Minimal (30% less than rubber)',
-      'Abrasion Loss': '< 30 mm³'
-    },
-    industries: ['Material Handling', 'Manufacturing', 'Engineering Industry'],
-    imageUrl: '/images/pu_wheels.png'
-  },
+
   // 10. SEALS & COMPONENTS - Scraper Blades
   {
     slug: 'scraper-blades',
@@ -197,23 +183,6 @@ export const PRODUCTS: Product[] = [
     },
     industries: ['Packaging Industry', 'Printing Industry', 'Manufacturing'],
     imageUrl: '/images/zero_crush_wheel.jpg'
-  },
-  // 12. ROLLERS - Paper Mill Rollers
-  {
-    slug: 'paper-mill-rollers',
-    name: 'Paper Mill Rollers',
-    category: 'rollers',
-    description: 'Durable, wear-resistant polyurethane rollers optimized for water removal, press sections, and conveying applications in harsh paper mill environments.',
-    applications: ['Press rolls', 'Felt guide rolls', 'Size press rolls', 'Calendar section guide rollers'],
-    features: ['Superior hydrolytic stability in wet environments', 'Excellent resistance to paper chemicals and sizing agents', 'High thermal conductivity to prevent heat build-up', 'Corrosion-resistant core bonding'],
-    specifications: {
-      'Hardness Range': '70 Shore A to 60 Shore D',
-      'Hydrolytic Resistance': 'Excellent in hot water/steam environments',
-      'Maximum Pressure': '120 kN/m',
-      'Core Coating Thickness': '15mm to 35mm'
-    },
-    industries: ['Paper & Pulp Industry', 'Engineering Industry'],
-    imageUrl: '/images/pu_roller.jpg'
   },
 
   // 13. LINERS - SOCOMAC Single Groove Liner
@@ -580,88 +549,9 @@ export const PRODUCTS: Product[] = [
     industries: ['Printing Industry', 'Packaging Industry', 'Paper & Pulp Industry'],
     imageUrl: '/images/pu_roller.jpg'
   },
-  {
-    slug: 'lamination-rollers',
-    name: 'Lamination Rollers',
-    category: 'rollers',
-    description: 'Heavy-duty lamination rollers engineered to provide uniform pressure distribution and excellent heat resistance, essential for flawless laminating of films, foils, and papers.',
-    applications: ['Plastic film lamination', 'Metal foil lamination', 'Paper board lamination', 'Adhesive coating lines'],
-    features: ['High heat aging resistance', 'Uniform surface energy and release properties', 'Non-marking polyurethane compounds', 'Excellent load-bearing capabilities'],
-    specifications: {
-      'Hardness Range': '50 Shore A to 90 Shore A',
-      'Temperature Limits': '-20°C to +110°C',
-      'Abrasion Loss (DIN 53516)': '< 35 mm³',
-      'Bonding Strength': 'Exceeds rubber-to-metal standard specifications'
-    },
-    industries: ['Packaging Industry', 'Textile Industry', 'Engineering Industry'],
-    imageUrl: '/images/pu_roller.jpg'
-  },
-  {
-    slug: 'encoder-rollers',
-    name: 'Encoder Rollers',
-    category: 'rollers',
-    description: 'Ultra-precision polyurethane encoder and measuring rollers designed to prevent slippage and ensure precise linear measurement in automated machinery.',
-    applications: ['Automatic sorting lines', 'CNC positioning systems', 'Cable manufacturing length counters', 'Web guiding systems'],
-    features: ['High coefficient of friction for slip prevention', 'Concentricity tolerance within 0.02mm', 'Static dissipative options available', 'Long-term dimensional stability'],
-    specifications: {
-      'Hardness Range': '70 Shore A to 95 Shore A',
-      'Dynamic Load Rating': 'Highly stable linear tracking',
-      'Friction Coefficient': '0.7 - 0.9 (on dry steel)',
-      'Concentricity': '< 0.02 mm'
-    },
-    industries: ['Engineering Industry', 'Electronics', 'Automation'],
-    imageUrl: '/images/pu_roller.jpg'
-  },
-  {
-    slug: 'coil-car-rollers',
-    name: 'Coil Car Rollers',
-    category: 'rollers',
-    description: 'Extremely heavy-duty polyurethane rollers designed to guide and support steel or aluminum coils during transit, preventing surface damage and denting.',
-    applications: ['Coil handling cars', 'Steel processing lines', 'Decoiler entry guides', 'Heavy-duty conveyor lines'],
-    features: ['Massive load-carrying capacity', 'High impact absorption prevents damage to coils', 'Tear-resistant formulation for sharp metal edges', 'Excellent adhesion to heavy steel cores'],
-    specifications: {
-      'Hardness Range': '85 Shore A to 75 Shore D',
-      'Load Capacity': 'Up to 20 Tons per roller',
-      'Impact Strength': 'High resilience, high durability',
-      'Abrasion Resistance': 'Premium grade industrial formulation'
-    },
-    industries: ['Steel Industry', 'Material Handling', 'Engineering Industry'],
-    imageUrl: '/images/pu_roller.jpg'
-  },
 
   // WHEELS
-  {
-    slug: 'reach-truck-wheels',
-    name: 'Reach Truck Wheels',
-    category: 'wheels',
-    description: 'Premium-grade polyurethane reach truck drive wheels, load wheels, and castor assemblies, designed for material handling trucks like Linde, Jungheinrich, BT, Toyota, and Crown.',
-    applications: ['Forklifts and reach trucks', 'Narrow aisle warehouse equipment', 'Order pickers', 'Electric pallet jacks'],
-    features: ['High bond strength prevents tread delamination under heavy loads', 'Excellent thermal properties reduce heat buildup in continuous shifts', 'Maximum traction on polished concrete warehouse floors', 'Long service life reduces fleet downtime'],
-    specifications: {
-      'Hardness Range': '90 Shore A to 95 Shore A',
-      'Bonding Agent': 'Premium B2B cold-cure polyurethanes',
-      'Traction Index': 'High friction coefficient',
-      'Load Rating': 'Exceeds OEM requirements'
-    },
-    industries: ['Material Handling', 'Logistics', 'Warehousing'],
-    imageUrl: '/images/pu_wheels.png'
-  },
-  {
-    slug: 'pallet-truck-wheels',
-    name: 'Pallet Truck Wheels',
-    category: 'wheels',
-    description: 'Replacement polyurethane wheels for hand pallet trucks and electric stackers, offering easy rolling and high wear resistance on rough industrial floors.',
-    applications: ['Hand pallet trucks', 'Electric stacker trucks', 'Tuggers', 'Floor wash equipment'],
-    features: ['Direct fit for standard pallet jacks (e.g., 80x70mm, 82x60mm)', 'Heavy-duty steel or cast iron hub options', 'Equipped with high-grade sealed ball bearings', 'Resistant to metal chips and floor debris'],
-    specifications: {
-      'Hardness Range': '92 Shore A to 95 Shore A',
-      'Sizes': '80mm diameter x 70mm width (Standard)',
-      'Bearing Bore': '20mm or 25mm options',
-      'Dynamic Capacity': 'Up to 1,000 kg per wheel'
-    },
-    industries: ['Material Handling', 'Logistics', 'Manufacturing', 'Cement Industry'],
-    imageUrl: '/images/pu_wheels.png'
-  },
+
   {
     slug: 'load-wheels',
     name: 'Load Wheels',
@@ -676,22 +566,6 @@ export const PRODUCTS: Product[] = [
       'Deformation Rate': '< 2.5% under max static load'
     },
     industries: ['Material Handling', 'Engineering Industry', 'Mining Industry'],
-    imageUrl: '/images/pu_wheels.png'
-  },
-  {
-    slug: 'bespoke-polyurethane-wheels',
-    name: 'Bespoke Polyurethane Wheels',
-    category: 'wheels',
-    description: 'Custom-engineered, high-performance bespoke polyurethane wheels designed and molded to unique dimensions, profiles, and load specifications for special machinery.',
-    applications: ['Custom machinery guidance systems', 'Flanged track wheels', 'Tapered conveyor wheels', 'Robotic transit assemblies', 'Specialized factory trolleys'],
-    features: ['Fully customizable tread profiles (flanged, grooved, tapered, concave)', 'Exceptional bond strength to prevent delamination under heavy service', 'Non-marking polyurethane protects floors and tracks', 'Premium chemical, oil, and moisture resistance'],
-    specifications: {
-      'Hardness Range': '60 Shore A to 75 Shore D',
-      'Core Material': 'Steel, Cast Iron, Aluminum, or Solid PU cores',
-      'Custom Profile Options': 'Flanged, V-Groove, Tapered, Concave, or Grooved tread configurations',
-      'Tear Strength': 'Premium high-tear formulation'
-    },
-    industries: ['Manufacturing', 'Logistics', 'Steel Industry', 'Engineering Industry'],
     imageUrl: '/images/pu_wheels.png'
   },
 
